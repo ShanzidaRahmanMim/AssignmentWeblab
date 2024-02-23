@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <a href="#" class="logo">My <span>Portfolio</span></a>
-        <div class="menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navlist">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Achievements</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <!-- <li><a href="#">Photograogy</a></li> -->
         </ul>
         <div class="top-btn">
-            <a href="#" class="h-btn">Contact me</a>
+            <a href="#contact" class="h-btn">Contact me</a>
         </div>
     </header>
     <section class="hero" id="home">
-        <div class="main-content">
-            <h3>Hi,There!</h3>
+        <div class="main-content" data-aos="fade-in">
+            <h4>Hi,There!</h4>
             <h1>I'm <span>Shanzida Rahman Mim</span></h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nesciunt laudantium fuga! Nisi veritatis, ea dolorem odio maiores sunt hic velit iste repudiandae at exercitationem quae et! Libero, laborum nostrum!</p>
             <div class="social">
@@ -40,7 +41,7 @@
                 <!-- <a href="#"><i class="ri-github-fill"></i></a> -->
             </div>
             <div class="main-btn">
-                <a href="#" class="btn">Download CV</a>
+                <a href="images/cv.pdf" download class="btn">Download CV</a>
             </div>
         </div>
         <div class="pic">
@@ -48,11 +49,14 @@
         </div>
 
     </section>
+    <!-- data-aos="zoom-in-down" -->
     <section class="about" id="about">
+       
         <div class="about-img">
+        
             <img src="images/last.jpg" alt="image">
         </div>
-        <div class="about-text">
+        <div class="about-text" >
             <h2>I am a <span>student</span><br> & I am studying at <span>KUET</span></h2>
             <div class="exp">
              <p>  
@@ -73,10 +77,10 @@
         </div>
     </section>
     <section class="education" id="education">
-        <div class="center-text">
-        <h2>My <span>journey</span></h2>
+        <div class="center-text" >
+        <h2>My <span>Education</span></h2>
         </div> 
-        <div class="edu-content">
+        <div class="edu-content" >
             <div class="box">
                 <img src="images/calendar.png" alt="image">
                 <h3>HSC</h3>
@@ -107,5 +111,120 @@
         </div>  
         
     </section>
+    <section class="project" id="project">
+        <div class="center-text" >
+            <h2>My <span>Projects</span></h2>
+        </div> 
+            <div class="project-content">
+                <div class="row">
+                    <img src="images/port-1.jpg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>Website Development</h4>
+                </div>
+                <div class="row">
+                    <img src="images/port-2.jpg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>App Development</h4>
+                </div>
+                <div class="row">
+                    <img src="images/port-3.jpg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>Database handling</h4>
+                </div>
+                <div class="row">
+                    <img src="images/port-4.jpg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>Website Development</h4>
+                </div>
+                <div class="row">
+                    <img src="images/port-5.jpg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>Website Development</h4>
+                </div>
+                <div class="row">
+                    <img src="images/port-6.jpg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>Website Development</h4>
+                </div>
+            </div>
+           
+    </section>
+    <section class="contact" id="contact">
+        <div class="center-text">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your name" id="nameId" required>
+                <input type="email" placeholder="Email Adress" id="emailId" required>
+                <textarea cols="30" rows="10" id="textId" placeholder="Write message here" required></textarea>
+                <input type="submit" name="" value="Send Message" class="send-btn" onclick="sendMsg()">
+            </form>
+           
+        </div>
+        <p id="msg" class="msg">message sent successfully</p>
+
+    </section>
+    <div class="footer">
+        <div class="copyright">
+            <p>Shanzida Rahman Mim,All Rights Reserved.</p>
+           
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+            offset:300,
+            duration:1400,
+        }
+      );
+    </script>
 </body>
 </html>
